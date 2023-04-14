@@ -38,7 +38,7 @@ try:
             pass
         try:
             for key, value in status.items():
-                if line[7] == key:
+                if line[-2] == key:
                     status[key] += 1
         except Exception as e:
             pass
