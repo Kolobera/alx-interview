@@ -13,6 +13,7 @@ def print_stats(file_size, status):
             print("{}: {}".format(key, value))
 
 if __name__ == "__main__":
+    """Main function"""
     status = {
         "200": 0,
         "301": 0,
