@@ -22,13 +22,13 @@ status = {
     "405": 0,
     "500": 0
 }
-counter = 1
+counter = 0
 file_size = 0
 try:
     for line in sys.stdin:
         if counter == 10:
             print_stats(file_size, status)
-            counter = 1
+            counter = 0
         else:
             counter += 1
         line = line.split()
