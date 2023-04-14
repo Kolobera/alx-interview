@@ -47,4 +47,3 @@ if __name__ == "__main__":
         print_stats(file_size, status)
     except KeyboardInterrupt as e:
         print_stats(file_size, status)
-        raise
