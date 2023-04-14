@@ -30,7 +30,7 @@ if __name__ == "__main__":
         for line in sys.stdin:
             if counter == 10:
                 print_stats(file_size, status)
-                counter = 0
+                counter = 1
             else:
                 counter += 1
             line = line.split()
