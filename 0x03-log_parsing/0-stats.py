@@ -22,7 +22,7 @@ status = {
     "405": 0,
     "500": 0
 }
-counter = 0
+counter = 1
 file_size = 0
 try:
     for line in sys.stdin:
