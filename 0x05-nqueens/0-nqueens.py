@@ -18,6 +18,7 @@ def get_input():
         exit(1)
     return n
 
+
 def queens(n, i, a, b, c):
     if i < n:
         for j in range(n):
@@ -26,7 +27,9 @@ def queens(n, i, a, b, c):
     else:
         yield a
 
+
 if __name__ == '__main__':
+    '''main program'''
     n = get_input()
     for solution in queens(n, 0, [], [], []):
         print([[i, j] for i, j in enumerate(solution)])
