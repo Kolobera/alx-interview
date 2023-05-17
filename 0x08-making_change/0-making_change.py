@@ -16,5 +16,5 @@ def makeChange(coins: list, total: int):
             coins.remove(coins[-1])
         else:
             rest -= coins[-1]
-            count+=1
+            count += 1
     return count
