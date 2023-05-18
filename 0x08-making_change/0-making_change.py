@@ -15,6 +15,7 @@ def makeChange(coins: list, total: int):
         if coins[-1] > rest:
             coins.remove(coins[-1])
         else:
-            rest -= coins[-1]
-            count += 1
+            dividende = rest//coins[-1]
+            rest -= coins[-1] * (dividende)
+            count += dividende
     return count
