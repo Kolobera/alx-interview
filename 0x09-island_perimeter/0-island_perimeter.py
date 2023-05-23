@@ -18,8 +18,8 @@ def island_perimeter(grid):
                 column_tracker.append(j)
     if perimeter == 0:
         return 0
-    line_tracker = dict(Counter(line_tracker))
-    column_tracker = dict(Counter(column_tracker))
+    line_tracker = dict((x,line_tracker.count(x)) for x in line_tracker)
+    column_tracker = dict((x,column_tracker.count(x)) for x in column_tracker)
     adder = len([i for i in line_tracker.values() if i > 1]) + len(
         [i for i in column_tracker.values() if i > 1]) - 3
     return 2 * (perimeter + 1 - adder)
