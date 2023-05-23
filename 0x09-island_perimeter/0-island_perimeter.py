@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Island Parameter Module"""
-from collections import Counter
 
 
 def island_perimeter(grid):
